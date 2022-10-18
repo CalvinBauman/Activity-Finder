@@ -1,0 +1,85 @@
+.background {
+    background-color: white;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.header {
+    margin-top: 20px;
+    text-align: left;
+    padding-left: 30px;
+    font-size: 60px;
+}
+.avatars{
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    justify-content: right;
+}
+
+#about-us {
+    display: inline;
+    text-align: right;
+}
+
+#answer-questions {
+    display: inline;
+}
+
+hr.dashed {
+    border-top: 3px dashed #bbb;
+}
+
+.memeImg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    margin-right: 20px;
+}
+
+.meme-gen {
+    margin-left: 30%;
+    margin-right: 10%;
+    margin-bottom: 150px;
+    width: 22vw;
+    height: 22vw;
+    max-width: 30%;
+    max-height: 5%;
+    background-color: white;
+}
+
+.caption-gen {
+    margin-right: 30%;
+    margin-left: 10%;
+    margin-bottom: 150px;
+    width: 22vw;
+    height: 22vw;
+    max-width: 30%;
+    max-height: 5%;
+    background-color: white;
+}
+
+.footer {
+    position: absolute;
+    width: 99%;
+}
+.flex-container {
+    justify-content: center;
+    display: flex;
+}
+.container {
+    margin-left: 30px;
+}
+.storage {
+    border: 3px solid blue;
+}
+h1 {
+    font-size: 32px;
+    color: black;
+}
+h2 {
+    font-size: 20px;
+    font-weight: lighter;
+    text-align: left;
+    padding-left: 30px;
+}
