@@ -8,12 +8,6 @@
 
 //Randomise the background of the quiz for each questiion
 
-//Possible - Personality Traits
-// 15 -21- You Need Help
-// 10 - 15 - Good Soul
-// 5- 10 - Meh 
-// 5 - Are You Even Real
-
 
 let currentQuestion = 0;
 let score = [];
@@ -63,7 +57,6 @@ function loadNextQuestion () {
 
     selectedAnswersData.push()
     
-
     const totalScore = score.reduce((total, currentNum) => total + currentNum);
 
     //Finally we incement the current question number ( to be used as the index for each array)
