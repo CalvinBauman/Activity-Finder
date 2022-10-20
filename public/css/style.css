@@ -3,22 +3,41 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+
 .header {
     margin-top: 20px;
     text-align: left;
     padding-left: 30px;
     font-size: 60px;
 }
+
+.nav {
+    margin-top: 20px;
+    float: right;
+    padding-right: 30px;
+    font-size: 25px;
+    display: inline;
+}
+
+.profile {
+    margin-top: 20px;
+    padding-right: 30px;
+    font-size: 15px;
+    text-align: right;
+}
+
 .avatars{
     display: flex;
     margin-top: 20px;
     margin-bottom: 20px;
     justify-content: right;
+    padding-right: 30px;
 }
 
 #about-us {
     display: inline;
-    text-align: right;
+    float: right;
+    padding-right: 30px;
 }
 
 #answer-questions {
@@ -27,6 +46,7 @@
 
 hr.dashed {
     border-top: 3px dashed #bbb;
+    margin-top: 25px;
 }
 
 .memeImg {
@@ -59,27 +79,81 @@ hr.dashed {
     background-color: white;
 }
 
-.footer {
-    position: absolute;
-    width: 99%;
-}
 .flex-container {
     justify-content: center;
     display: flex;
 }
+
 .container {
     margin-left: 30px;
 }
+
 .storage {
     border: 3px solid blue;
 }
+
 h1 {
     font-size: 32px;
     color: black;
 }
+
 h2 {
     font-size: 20px;
     font-weight: lighter;
     text-align: left;
     padding-left: 30px;
+}
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+  }
+
+#acct-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 100%;
+}
+
+.question-btn {
+    display: flex;
+    display: inline;
+    margin-top: 50px;
+}
+
+.quiz-container {
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+    text-shadow: 1px 1px white;
+    padding: 3rem;
+    text-shadow: 0 1px #00000010;
+    width: 60%;
+    margin: 5rem auto;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(360deg, transparent, #ffffff);
+    max-height: 40vh;
+}
+
+.result {
+    display: flex;
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 30px;
+    max-width: 100vh;
+    color:#bbb;
+}
+
+.results {
+    display: flex;
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 30px;
+    max-width: 100vh;
 }
