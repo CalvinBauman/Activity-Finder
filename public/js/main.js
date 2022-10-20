@@ -77,8 +77,8 @@ function loadNextQuestion () {
             <h1>Summary</h1>
             <p>Possible - Personality Traits, see below for a summary based on your results:</p>
             <p>15 - 21- You should watch a movie</p>
-            <p>10 - 15 - you should play a game</p>
-            <p>5 - 10 - you should read a book</p>
+            <p>10 - 15 - You should play a game</p>
+            <p>5 - 10 - You should read a book</p>
             <p>5 - You should do all three</p>
         </div>
         <button class="restart">Restart Quiz</button>
