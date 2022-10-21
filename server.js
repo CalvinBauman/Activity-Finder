@@ -14,7 +14,7 @@ app.engine('handlebars', exphbs({ defaultLayout: 'main' }));
 app.set('view engine', 'handlebars');
 
 const sess = {
-  secret: process.env.SECRET,
+  secret: '42feet9inches',
   cookie: {},
   resave: false,
   saveUninitialized: true,
