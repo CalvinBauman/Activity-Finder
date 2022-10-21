@@ -7,7 +7,7 @@ This application gives users the ability to select an activity for a night n at 
 * [Contributors](#contributors)
 
 ## Deployed Application
-
+https://r-u-bored.herokuapp.com/
 ## Installation
 In order to runn the application, one must have the following installed:
 Node.js, Express.js, MySQL, Sequelize.js, and Handlebars.js
