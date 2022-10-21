@@ -11,41 +11,34 @@ body {
 }
 </style>
     <script src="https://cdn.tailwindcss.com"></script>
-    <div id="alert-border-1" class="flex p-4 mb-4 bg-blue-100 border-t-4 border-blue-500 dark:bg-blue-200" role="alert">
-
-    </div>
+    <div id="alert-border-1" class="flex p-6 mb-4 bg-blue-100 border-t-4 border-blue-500 dark:bg-blue-200" role="alert"></div>
     <title>Activity Finder</title>
   </head>
   <body>
-    <div>
-      <header>
-      </header>
-      <nav>
-          <a href='/'>Home</a>
-        {{#if logged_in}}
-          <a href='/profile'>Profile</a>
-          |
-          <button id='logout'>logout</button>
-        {{else}}
-          <a href='/login'>login</a>
-        {{/if}}
-      </nav>
-        
-    </div>
     {{{body}}}
     <div class="header">
         R U BORED?
+        <nav class="nav">
+            <a href='/'>Home</a>
+          {{#if logged_in}}
+            <a href='/profile'>Profile</a>
+            |
+            <button id='logout'>Logout</button>
+          {{else}}
+            <a href='/login'>Login</a>
+          {{/if}}
+        </nav>
     </div>
     <div>
         <h2 id="answer-questions">Answer these questions to figure out your next move!</h2>
-        <h2 id="about-us">More about us:</h2>
+        <h2 id="about-us">More About Us - Visit Our Github!</h2>
     </div>
     
     <div class="avatars">
         <a href="https://github.com/ajcoraci22" target="_blank"><img class="w-12 h-12 rounded-full" src="https://ca.slack-edge.com/T03EW3WQY20-U03LD0G13F1-f87ab5cbfc65-512" alt="Rounded avatar"> </a>
         <a href="https://github.com/CalvinBauman" target="_blank"><img class="w-12 h-12 rounded-full" src="https://ca.slack-edge.com/T03EW3WQY20-U03MAE018TX-a52320f6ea11-512" alt="Rounded avatar"></a>
         <a href="https://github.com/allenseb" target="_blank"><img class="w-12 h-12 rounded-full" src="https://user-images.githubusercontent.com/98289954/185718783-e2a5723b-4ef4-44d9-a133-9ba3d5c9cbdc.jpeg" alt="Rounded avatar"></a>
-        <a href="https://github.com/mncole98" target="_blank"><img class="w-12 h-12 rounded-full" src="https://ca.slack-edge.com/T03EW3WQY20-U03LYKUV9ED-g3bb79bc68e1-512" alt="Rounded avatar"></a>
+        <a href="https://github.com/mncole98" target="_blank"><img class="w-12 h-12 rounded-full" src="https://avatars.githubusercontent.com/u/108306564?v=4" alt="Rounded avatar"></a>
     </div>
     
     <hr class="dashed">
@@ -53,7 +46,7 @@ body {
       {{#if logged_in}}
        <!-- <button class="generate-cap-btn"> Generate Caption</button> -->
     <div class="quiz-container">
-        <div class="title">Activity Finder Quiz</div>
+        <div class="title"></div>
         <div id="question" class="question"></div>
         <label class="option">
             <input type="radio" name="option" value="1" />
@@ -69,28 +62,26 @@ body {
         </label>
         <!-- Buttons -->
         <div class="controls">
-            <button class="previous">Previous</button>
-            <button class="next">Next</button>
+            <button type="button" class="question-btn previous refresh-button text-white bg-gradient-to-br from-green-400 to-blue-600 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">Previous</button>
+            <button type="button" class="question-btn next refresh-button text-white bg-gradient-to-br from-green-400 to-blue-600 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">Next</button>
         </div>
     </div>
 
-    <div class="result">
+    <div class="results"></div>
 
-    </div>
-    <div class="results">
-
-    </div>
+    <div class="result"></div>
         
     </div>
         {{else}}
-          <a href='/login'><button type="button" class="refresh-button text-white bg-gradient-to-br from-green-400 to-blue-600 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">Create An Account</button>
+          <a href='/login'><button type="button" id="acct-button" class="refresh-button text-white bg-gradient-to-br from-green-400 to-blue-600 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">Create An Account To Start Quiz</button>
         </a>
         {{/if}}
+    </div>
 </div>
         
   
     <!--<footer class="footer ">-->
-<footer class="p-4 bg-white rounded-lg shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800">
+<footer id="footer" class="p-4 bg-white rounded-lg shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800">
     <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2022 <a href="https://flowbite.com/" class="hover:underline">The Bored Team™</a>. All Rights Reserved.
     </span>
     <ul class="flex flex-wrap items-center mt-3 text-sm text-gray-500 dark:text-gray-400 sm:mt-0">
